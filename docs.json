@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "venus",
+  "theme": "mint",
   "name": "Trading Platform Documentation",
   "colors": {
     "primary": "#4DA4FF",
