@@ -1,68 +1,81 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mint Starter Kit",
+  "theme": "venus",
+  "name": "Trading Platform Documentation",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#4DA4FF",
+    "light": "#40FFAF",
+    "dark": "#1B2538"
   },
   "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Documentation",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Getting Started",
             "pages": [
-              "index",
+              "introduction",
               "quickstart",
-              "development"
+              "connecting-wallet"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Trading Basics",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "trading/overview",
+              "trading/market-orders",
+              "trading/limit-orders",
+              "trading/stop-loss",
+              "trading/understanding-prices"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Advanced Features",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "advanced/copytrading",
+              "advanced/minting-shares",
+              "advanced/merging-shares",
+              "advanced/portfolio-management"
             ]
           },
           {
-            "group": "AI tools",
+            "group": "Platform Features",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "features/orderbook",
+              "features/charts",
+              "features/chat",
+              "features/leaderboard",
+              "features/market-search"
+            ]
+          },
+          {
+            "group": "Venues",
+            "pages": [
+              "venues/overview",
+              "venues/polymarket",
+              "venues/kalshi",
+              "venues/comparison"
+            ]
+          },
+          {
+            "group": "Resources",
+            "pages": [
+              "resources/glossary",
+              "resources/faq",
+              "resources/tips-strategies"
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "API Reference",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "API Documentation",
             "pages": [
               "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
             ]
           }
         ]
@@ -71,14 +84,14 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "Platform",
+          "href": "https://yourdomain.com",
+          "icon": "chart-line"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "Community",
+          "href": "https://discord.gg/yourserver",
+          "icon": "discord"
         }
       ]
     }
@@ -91,32 +104,29 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:support@yourdomain.com"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Launch App",
+      "href": "https://yourdomain.com/trade"
     }
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "cursor"
+    ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/yourhandle",
+      "discord": "https://discord.gg/yourserver"
     }
   }
 }

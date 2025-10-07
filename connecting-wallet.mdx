@@ -1,0 +1,334 @@
+---
+title: "Connecting Your Wallet"
+description: "Connect to Polymarket and Kalshi to start trading"
+---
+
+## Wallet Connection Overview
+
+Our platform supports both **Polymarket** (crypto-based) and **Kalshi** (traditional finance) markets. Each requires a different connection method.
+
+<CardGroup cols={2}>
+  <Card title="Polymarket" icon="ethereum">
+    Connect Ethereum wallet with USDC on Polygon
+  </Card>
+  <Card title="Kalshi" icon="landmark">
+    Sign in with email and complete KYC
+  </Card>
+</CardGroup>
+
+## Connecting to Polymarket
+
+### Step 1: Prepare Your Wallet
+
+You'll need:
+- An Ethereum-compatible wallet (MetaMask, WalletConnect, Coinbase Wallet, etc.)
+- USDC on Polygon network
+- Small amount of MATIC for gas (usually < $0.01 per trade)
+
+### Step 2: Connect Wallet
+
+<Steps>
+  <Step title="Click Connect Wallet">
+    Click the "Connect Wallet" button in the top right corner
+  </Step>
+  
+  <Step title="Choose Wallet Provider">
+    Select your preferred wallet from the list:
+    - MetaMask (most popular)
+    - WalletConnect (mobile wallets)
+    - Coinbase Wallet
+    - Other supported wallets
+  </Step>
+  
+  <Step title="Approve Connection">
+    - Approve the connection in your wallet popup
+    - The platform only requests read access initially
+    - No funds can be moved without explicit approval
+  </Step>
+  
+  <Step title="Switch to Polygon">
+    If prompted, switch to Polygon network:
+    - Network Name: Polygon Mainnet
+    - RPC URL: https://polygon-rpc.com
+    - Chain ID: 137
+    - Currency Symbol: MATIC
+    
+    Most wallets will switch automatically when you make your first trade.
+  </Step>
+</Steps>
+
+### Step 3: Fund Your Wallet
+
+To trade on Polymarket, you need USDC on Polygon:
+
+<Tabs>
+  <Tab title="Bridge from Ethereum">
+    Use the official Polygon bridge:
+    1. Go to https://wallet.polygon.technology/
+    2. Connect your wallet
+    3. Bridge USDC from Ethereum → Polygon
+    4. Wait ~10 minutes for confirmation
+    
+    <Info>Bridge fees are typically $5-20 depending on Ethereum gas</Info>
+  </Tab>
+  
+  <Tab title="Buy Directly">
+    Purchase USDC directly on Polygon:
+    1. Use an exchange like Coinbase or Kraken
+    2. Withdraw USDC to Polygon network
+    3. Much cheaper than bridging (usually < $1)
+    
+    <Warning>Make sure to select Polygon network, not Ethereum!</Warning>
+  </Tab>
+  
+  <Tab title="Use a Ramp">
+    Buy crypto with credit/debit card:
+    1. Use ramp services integrated in wallets
+    2. Buy MATIC first, then swap to USDC
+    3. Higher fees (~3-5%) but fastest method
+  </Tab>
+</Tabs>
+
+## Connecting to Kalshi
+
+### Step 1: Create Account
+
+<Steps>
+  <Step title="Sign Up">
+    1. Click "Connect Wallet" and select "Kalshi"
+    2. Enter your email address
+    3. Verify email with code sent to your inbox
+  </Step>
+  
+  <Step title="Complete KYC">
+    Kalshi requires identity verification for US residents:
+    - Full legal name
+    - Date of birth
+    - Social Security Number
+    - Photo ID (driver's license or passport)
+    - Residential address
+    
+    <Warning>
+      Kalshi is only available to US residents. Non-US users should use Polymarket.
+    </Warning>
+  </Step>
+  
+  <Step title="Link Bank Account">
+    Connect your bank for deposits:
+    - Use Plaid for instant connection
+    - Or manually enter routing/account numbers
+    - Verify micro-deposits (if required)
+  </Step>
+</Steps>
+
+### Step 2: Deposit Funds
+
+<Tabs>
+  <Tab title="ACH Transfer (Free)">
+    - Deposits via ACH are free
+    - Takes 1-3 business days
+    - Best for larger amounts ($500+)
+  </Tab>
+  
+  <Tab title="Wire Transfer ($10 fee)">
+    - Arrives same day
+    - $10 fee from Kalshi
+    - Bank may charge additional fees
+    - Best for urgent large deposits
+  </Tab>
+  
+  <Tab title="Debit Card (1.5% fee)">
+    - Instant availability
+    - 1.5% processing fee
+    - $10 minimum, $1,000 maximum per transaction
+    - Best for small, immediate trades
+  </Tab>
+</Tabs>
+
+## Managing Multiple Wallets
+
+You can connect both Polymarket and Kalshi simultaneously:
+
+### Switching Between Venues
+
+<Steps>
+  <Step title="View Connected Wallets">
+    Click your profile picture to see all connected accounts
+  </Step>
+  
+  <Step title="Select Active Wallet">
+    Choose which wallet to trade with:
+    - Polymarket markets require Polygon wallet
+    - Kalshi markets require Kalshi account
+  </Step>
+  
+  <Step title="Trade Seamlessly">
+    The platform automatically uses the correct wallet based on the market venue
+  </Step>
+</Steps>
+
+### Wallet Display
+
+Your wallet balance shows:
+- **Available Balance**: Funds ready to trade
+- **In Orders**: Funds locked in open limit orders
+- **In Positions**: Current value of active positions
+
+## Security Best Practices
+
+<Warning>
+  Protect your funds with these security measures:
+</Warning>
+
+### For Crypto Wallets (Polymarket)
+
+<Accordion title="Use Hardware Wallet">
+  - Ledger or Trezor provide maximum security
+  - Private keys never leave the device
+  - Worth it for balances > $1,000
+</Accordion>
+
+<Accordion title="Never Share Seed Phrase">
+  - Your 12/24 word seed phrase = your money
+  - No one from support will ever ask for it
+  - Write it down physically, never digitally
+  - Store in secure location (safe, safety deposit box)
+</Accordion>
+
+<Accordion title="Verify Contracts">
+  - Only approve transactions you initiated
+  - Check contract addresses before approving
+  - Revoke unused approvals periodically
+</Accordion>
+
+<Accordion title="Use Separate Trading Wallet">
+  - Don't trade with your cold storage wallet
+  - Keep only funds needed for trading
+  - Reduces risk if wallet is compromised
+</Accordion>
+
+### For Kalshi Accounts
+
+<Accordion title="Enable 2FA">
+  - Use authenticator app (Google Authenticator, Authy)
+  - SMS 2FA is better than nothing but less secure
+  - Required for withdrawals over $1,000
+</Accordion>
+
+<Accordion title="Strong Password">
+  - Use unique password (not reused anywhere)
+  - Minimum 16 characters
+  - Mix of letters, numbers, symbols
+  - Consider password manager
+</Accordion>
+
+<Accordion title="Monitor Account Activity">
+  - Check login history regularly
+  - Set up withdrawal notifications
+  - Report suspicious activity immediately
+</Accordion>
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="Wallet Won't Connect">
+    **Solutions:**
+    - Refresh the page and try again
+    - Clear browser cache
+    - Try different browser (Chrome recommended)
+    - Update wallet extension to latest version
+    - Disable other wallet extensions temporarily
+    - Check if wallet is locked/logged out
+  </Accordion>
+  
+  <Accordion title="Wrong Network">
+    **For Polymarket:**
+    - Switch to Polygon (Chain ID: 137)
+    - Some wallets auto-switch on first transaction
+    - Add Polygon network manually if needed
+    
+    **For Kalshi:**
+    - No network needed (traditional account)
+    - If seeing crypto prompts, wrong venue selected
+  </Accordion>
+  
+  <Accordion title="Transaction Pending Too Long">
+    **Polymarket:**
+    - Check Polygon gas prices
+    - Transaction usually confirms in 5-30 seconds
+    - If stuck >5 minutes, speed up or cancel in wallet
+    
+    **Kalshi:**
+    - Bank transfers take 1-3 business days
+    - Contact Kalshi support if >3 days
+  </Accordion>
+  
+  <Accordion title="Balance Not Showing">
+    **Solutions:**
+    - Click refresh icon in balance display
+    - Check you're on correct network (Polygon)
+    - Verify transaction confirmed on chain
+    - Wait a few minutes for indexer to update
+    - Try disconnecting and reconnecting wallet
+  </Accordion>
+</AccordionGroup>
+
+## Withdrawal Process
+
+### From Polymarket
+
+Withdrawals are instant:
+1. Your USDC stays in your self-custodial wallet
+2. No withdrawal process needed
+3. Bridge back to Ethereum or other chains anytime
+4. Send to exchanges whenever you want
+
+### From Kalshi
+
+<Steps>
+  <Step title="Initiate Withdrawal">
+    Go to Account → Withdraw
+  </Step>
+  
+  <Step title="Enter Amount">
+    - Minimum: $10
+    - Must not have pending orders
+    - Account must be verified
+  </Step>
+  
+  <Step title="Choose Method">
+    - **ACH**: Free, 1-3 business days
+    - **Wire**: $10 fee, same/next business day
+  </Step>
+  
+  <Step title="Confirm">
+    - May require 2FA verification
+    - Email confirmation sent
+    - Check account for arrival
+  </Step>
+</Steps>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Find Markets" icon="magnifying-glass" href="/features/market-search">
+    Search for markets to trade
+  </Card>
+  
+  <Card title="Learn Trading" icon="graduation-cap" href="/trading/overview">
+    Understand order types and strategies
+  </Card>
+  
+  <Card title="View Your Portfolio" icon="wallet" href="/advanced/portfolio-management">
+    Track your positions and P&L
+  </Card>
+  
+  <Card title="Security Tips" icon="shield" href="/resources/faq">
+    Keep your funds safe
+  </Card>
+</CardGroup>
+
+<Note>
+  **Still having issues?** Contact support at support@yourdomain.com or join our Discord for community help.
+</Note>
+

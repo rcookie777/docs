@@ -1,80 +1,255 @@
 ---
-title: "Quickstart"
-description: "Start building awesome documentation in minutes"
+title: "Quick Start Guide"
+description: "Get trading on prediction markets in 5 minutes"
 ---
 
-## Get started in three steps
+## Get Started in 5 Minutes
 
-Get your documentation site running locally and make your first customization.
+This guide will walk you through making your first prediction market trade.
 
-### Step 1: Set up your local environment
+<Steps>
+  <Step title="Connect Your Wallet">
+    Click "Connect Wallet" in the top right corner of the platform.
+    
+    **For Polymarket markets:**
+    - Connect an Ethereum wallet (MetaMask, WalletConnect, Coinbase Wallet)
+    - Ensure you have USDC on Polygon network
+    
+    **For Kalshi markets:**
+    - Sign in with email
+    - Complete KYC verification (US residents only)
+    - Deposit USD from your bank account
+    
+    <Tip>
+      You can trade on both venues from the same account. Connect both for full access.
+    </Tip>
+  </Step>
+  
+  <Step title="Find a Market">
+    Use the market search to find something interesting:
+    
+    1. Click the search icon or press `⌘/Ctrl + K`
+    2. Type keywords related to events you want to trade
+    3. Filter by category: Politics, Crypto, Sports, etc.
+    4. Choose either Polymarket or Kalshi markets
+    
+    **Popular categories:**
+    - Politics: Elections, policy decisions
+    - Crypto: Price predictions, protocol events
+    - Sports: Game outcomes, player performance
+    - Business: Earnings, M&A, economic indicators
+  </Step>
+  
+  <Step title="Understand the Market">
+    Before trading, check these key details:
+    
+    **Market Question**
+    - Read the exact question being asked
+    - Note the resolution criteria
+    - Check the end date
+    
+    **Current Price**
+    - Price shows implied probability (65¢ = 65% chance)
+    - Look at 24h change to see momentum
+    - Review volume to gauge market activity
+    
+    **Orderbook**
+    - See best bid (highest buy price)
+    - See best ask (lowest sell price)
+    - Spread between them indicates liquidity
+  </Step>
+  
+  <Step title="Place Your First Trade">
+    Let's start with a simple market order:
+    
+    1. Select "Yes" or "No" outcome you want to buy
+    2. Click "Market" order type
+    3. Enter the amount in USD you want to spend
+    4. Review the estimated shares you'll receive
+    5. Click "Buy Yes" or "Buy No"
+    6. Confirm the transaction in your wallet
+    
+    <Info>
+      **Market orders** execute immediately at the current best price. They're perfect for beginners because you don't have to set a price.
+    </Info>
+  </Step>
+  
+  <Step title="Monitor Your Position">
+    After your trade executes:
+    
+    1. Click "Orders" tab to see open positions
+    2. Watch real-time P&L updates
+    3. Set up stop-loss orders to manage risk
+    4. Close position anytime by selling your shares
+    
+    Your position value changes as the market price moves. If you bought Yes at 65¢ and it rises to 75¢, you can sell for a 10¢ profit per share.
+  </Step>
+</Steps>
+
+## Your First Trade Example
+
+Let's walk through a real example:
+
+<Tabs>
+  <Tab title="Buying Yes">
+    **Scenario:** You believe Bitcoin will reach $100k by year end
+    
+    **Market:** "Will Bitcoin reach $100,000 by Dec 31, 2025?"
+    - Current Yes price: 68¢
+    - Your conviction: Very bullish on crypto
+    
+    **Your Trade:**
+    1. Select "Yes" outcome
+    2. Choose "Market" order
+    3. Enter $100 USD
+    4. You'll receive ~147 Yes shares ($100 ÷ $0.68)
+    5. Execute trade
+    
+    **Potential Outcomes:**
+    - ✅ Bitcoin hits $100k → Shares settle at $1.00 → Profit: $47 (47% return)
+    - ❌ Bitcoin doesn't hit $100k → Shares settle at $0.00 → Loss: $100
+    - 📊 Price rises to 85¢ → Sell early → Profit: $25 (25% return)
+  </Tab>
+  
+  <Tab title="Selling No">
+    **Scenario:** You don't think it will rain tomorrow
+    
+    **Market:** "Will it rain in NYC tomorrow?"
+    - Current No price: 82¢
+    - Your conviction: Weather forecast shows sun
+    
+    **Your Trade:**
+    1. Select "No" outcome  
+    2. Choose "Market" order
+    3. Enter $164 USD
+    4. You'll receive 200 No shares
+    5. Execute trade
+    
+    **Potential Outcomes:**
+    - ✅ No rain → Shares settle at $1.00 → Profit: $36 (22% return)
+    - ❌ It rains → Shares settle at $0.00 → Loss: $164
+    - 📊 Forecast changes, price drops to 75¢ → Sell early → Cut losses at -$14
+  </Tab>
+</Tabs>
+
+## Understanding Your Trade
+
+When you place a trade, here's what happens:
 
 <AccordionGroup>
-  <Accordion icon="copy" title="Clone your docs locally">
-    During the onboarding process, you created a GitHub repository with your docs content if you didn't already have one. You can find a link to this repository in your [dashboard](https://dashboard.mintlify.com).
-    
-    To clone the repository locally so that you can make and preview changes to your docs, follow the [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) guide in the GitHub docs.
+  <Accordion title="Execution">
+    - **Market orders** execute immediately against the orderbook
+    - You pay the current ask price (when buying)
+    - You receive the current bid price (when selling)
+    - Small trades usually fill completely; large trades may get partial fills
   </Accordion>
-  <Accordion icon="rectangle-terminal" title="Start the preview server">
-    1. Install the Mintlify CLI: `npm i -g mint`
-    2. Navigate to your docs directory and run: `mint dev`
-    3. Open `http://localhost:3000` to see your docs live!
+  
+  <Accordion title="Settlement">
+    Shares settle when the market resolves:
+    - Winning outcome settles at $1.00 per share
+    - Losing outcome settles at $0.00 per share
+    - Settlement happens automatically
+    - Funds appear in your wallet within minutes
+  </Accordion>
+  
+  <Accordion title="Fees">
+    **Polymarket:**
+    - No platform fees
+    - Gas fees on Polygon (usually < $0.01)
     
-    <Tip>Your preview updates automatically as you edit files.</Tip>
+    **Kalshi:**
+    - Trading fees vary by contract
+    - Typically 1-2% of notional value
+    - Withdrawal fees may apply
   </Accordion>
 </AccordionGroup>
 
-### Step 2: Deploy your changes
+## Common Beginner Mistakes
 
-<AccordionGroup>
-  <Accordion icon="github" title="Install our GitHub app">
-    Install the Mintlify GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app).
-    
-    Our GitHub app automatically deploys your changes to your docs site, so you don't need to manage deployments yourself.
-</Accordion>
-<Accordion icon="palette" title="Update your site name and colors">
-    For a first change, let's update the name and colors of your docs site.
+<Warning>
+  Avoid these common pitfalls:
+  
+  **1. Not Reading Resolution Criteria**
+  - Always check how the market resolves
+  - Understand edge cases and specific terms
+  
+  **2. Using Wrong Order Type**
+  - Market orders for speed, limit orders for price control
+  - Don't use market orders on illiquid markets
+  
+  **3. Ignoring Liquidity**
+  - Check orderbook depth before large trades
+  - Low liquidity = wider spreads = worse fills
+  
+  **4. Overleveraging**
+  - Start small while learning
+  - Don't risk more than you can afford to lose
+  - Prediction markets are not risk-free
+</Warning>
 
-    1. Open `docs.json` in your editor.
-    2. Change the `"name"` field to your project name.
-    3. Update the `"colors"` to match your brand.
-    4. Save and see your changes instantly at `http://localhost:3000`.
+## Practice Strategies
 
-    <Tip>Try changing the primary color to see an immediate difference!</Tip>
-  </Accordion>
-</AccordionGroup>
+Before risking significant capital, try these:
 
-### Step 3: Go live
+1. **Paper Trading**
+   - Watch markets without trading
+   - Track hypothetical P&L
+   - Learn market behavior
 
-<Accordion icon="rocket" title="Publish your docs">
-  1. Commit and push your changes.
-  2. Your docs will update and be live in moments!
-</Accordion>
+2. **Small Position Sizing**
+   - Start with $10-50 trades
+   - Focus on learning, not profits
+   - Build confidence gradually
 
-## Next steps
+3. **One Market at a Time**
+   - Don't spread yourself too thin
+   - Master one category before expanding
+   - Become an expert in a niche
 
-Now that you have your docs running, explore these key features:
+## Quick Reference
 
 <CardGroup cols={2}>
-
-<Card title="Write Content" icon="pen-to-square" href="/essentials/markdown">
-  Learn MDX syntax and start writing your documentation.
-</Card>
-
-<Card title="Customize style" icon="palette" href="/essentials/settings">
-  Make your docs match your brand perfectly.
-</Card>
-
-<Card title="Add code examples" icon="square-code" href="/essentials/code">
-  Include syntax-highlighted code blocks.
-</Card>
-
-<Card title="API documentation" icon="code" href="/api-reference/introduction">
-  Auto-generate API docs from OpenAPI specs.
-</Card>
-
+  <Card title="Order Types" icon="list" href="/trading/overview">
+    Market, Limit, Stop-Loss explained
+  </Card>
+  
+  <Card title="Glossary" icon="book" href="/resources/glossary">
+    Key terms and definitions
+  </Card>
+  
+  <Card title="Platform Features" icon="desktop" href="/features/orderbook">
+    Orderbook, charts, and more
+  </Card>
+  
+  <Card title="Advanced Trading" icon="graduation-cap" href="/advanced/copytrading">
+    Copytrading, minting, strategies
+  </Card>
 </CardGroup>
 
+## Next Steps
+
+Now that you've completed your first trade:
+
+<Steps>
+  <Step title="Learn Order Types">
+    Master limit orders and stop-losses for better control
+    
+    [Trading Basics →](/trading/overview)
+  </Step>
+  
+  <Step title="Explore Advanced Features">
+    Try copytrading or minting shares
+    
+    [Advanced Features →](/advanced/copytrading)
+  </Step>
+  
+  <Step title="Join the Community">
+    Chat with other traders and learn strategies
+    
+    [Platform Chat →](/features/chat)
+  </Step>
+</Steps>
+
 <Note>
-  **Need help?** See our [full documentation](https://mintlify.com/docs) or join our [community](https://mintlify.com/community).
+  **Need help?** Check our [FAQ](/resources/faq) or reach out to support at support@yourdomain.com
 </Note>
