@@ -9,85 +9,6 @@
   },
   "favicon": "/logo/synthesis-blue.svg",
   "navigation": {
-    "tabs": [
-      {
-        "tab": "Documentation",
-        "groups": [
-          {
-            "group": "Getting Started",
-            "pages": [
-              "introduction",
-              "quickstart",
-              "connecting-wallet"
-            ]
-          },
-          {
-            "group": "Trading Basics",
-            "pages": [
-              "trading/overview",
-              "trading/market-orders",
-              "trading/limit-orders",
-              "trading/stop-loss",
-              "trading/understanding-prices"
-            ]
-          },
-          {
-            "group": "Rewards & Referrals",
-            "pages": [
-              "rewards",
-              "referrals"
-            ]
-          },
-          {
-            "group": "Advanced Features",
-            "pages": [
-              "advanced/copytrading",
-              "advanced/minting-shares",
-              "advanced/merging-shares",
-              "advanced/portfolio-management"
-            ]
-          },
-          {
-            "group": "Platform Features",
-            "pages": [
-              "features/orderbook",
-              "features/charts",
-              "features/chat",
-              "features/leaderboard",
-              "features/market-search"
-            ]
-          },
-          {
-            "group": "Venues",
-            "pages": [
-              "venues/overview",
-              "venues/polymarket",
-              "venues/kalshi",
-              "venues/comparison"
-            ]
-          },
-          {
-            "group": "Resources",
-            "pages": [
-              "resources/glossary",
-              "resources/faq",
-              "resources/tips-strategies"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API Reference",
-        "groups": [
-          {
-            "group": "API Documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          }
-        ]
-      }
-    ],
     "global": {
       "anchors": [
         {
@@ -101,7 +22,70 @@
           "icon": "discord"
         }
       ]
-    }
+    },
+    "groups": [
+      {
+        "group": "Getting Started",
+        "pages": [
+          "introduction",
+          "quickstart",
+          "connecting-wallet"
+        ]
+      },
+      {
+        "group": "Trading Basics",
+        "pages": [
+          "trading/overview",
+          "trading/market-orders",
+          "trading/limit-orders",
+          "trading/stop-loss",
+          "trading/understanding-prices"
+        ]
+      },
+      {
+        "group": "Rewards & Referrals",
+        "pages": [
+          "rewards",
+          "referrals"
+        ]
+      },
+      {
+        "group": "Advanced Features",
+        "pages": [
+          "advanced/copytrading",
+          "advanced/minting-shares",
+          "advanced/merging-shares",
+          "advanced/portfolio-management"
+        ]
+      },
+      {
+        "group": "Platform Features",
+        "pages": [
+          "features/orderbook",
+          "features/charts",
+          "features/chat",
+          "features/leaderboard",
+          "features/market-search"
+        ]
+      },
+      {
+        "group": "Venues",
+        "pages": [
+          "venues/overview",
+          "venues/polymarket",
+          "venues/kalshi",
+          "venues/comparison"
+        ]
+      },
+      {
+        "group": "Resources",
+        "pages": [
+          "resources/glossary",
+          "resources/faq",
+          "resources/tips-strategies"
+        ]
+      }
+    ]
   },
   "logo": {
     "light": "/logo/synthesis.png",
