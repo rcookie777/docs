@@ -1,0 +1,91 @@
+---
+title: "Trading Basics"
+description: "Core concepts and a step‑by‑step path to your first trades"
+---
+
+## What you can trade
+
+Trade yes/no shares on questions about future events across two venues: **Polymarket** (crypto on Polygon) and **Kalshi** (regulated US exchange). Share prices range from 0.00–1.00 (0–100¢) and reflect implied probability.
+
+<CardGroup cols={3}>
+  <Card title="Market orders" icon="bolt" href="/trading/market-orders">
+    Execute immediately at the best available price
+  </Card>
+  <Card title="Limit orders" icon="tag" href="/trading/limit-orders">
+    Choose your price and wait for a fill
+  </Card>
+  <Card title="Stop‑loss" icon="shield" href="/trading/stop-loss">
+    Auto‑sell if price falls to your threshold
+  </Card>
+</CardGroup>
+
+## How a trade works
+
+<Steps>
+  <Step title="Pick an outcome">
+    Choose "Yes" or "No" for the market question. Price ≈ probability (e.g., 65¢ ≈ 65%).
+  </Step>
+  <Step title="Select order type">
+    Market for speed, Limit for control, Stop‑loss for protection.
+  </Step>
+  <Step title="Enter size">
+    Type an amount (USD) or number of shares. Minimum order is $1.00.
+  </Step>
+  <Step title="Review & place">
+    Check estimated shares, price, and fees, then confirm.
+  </Step>
+</Steps>
+
+## Understanding risk and P&L
+
+- **Max profit (Yes at P)**: \(1.00 − P\) per share if the outcome resolves Yes (reverse for No)
+- **Max loss (Yes at P)**: \(P\) per share if the outcome resolves No
+- **P&L moves** with the market price; you can sell anytime before resolution
+
+<Tip>
+  Start small while learning. Wide spreads or low liquidity can cause worse fills.
+  Use stop‑loss on volatile markets to cap downside.
+</Tip>
+
+## Where things live in the app
+
+<Columns cols={2}>
+  <Card title="Orderbook & trades" icon="list" href="/features/orderbook">
+    See best bid/ask, depth, and recent prints
+  </Card>
+  <Card title="Charts" icon="chart-line" href="/features/charts">
+    Track price over multiple timeframes
+  </Card>
+  <Card title="Portfolio & PnL" icon="wallet" href="/advanced/portfolio-management">
+    Monitor open positions, P&L, and history
+  </Card>
+  <Card title="Search" icon="magnifying-glass" href="/features/market-search">
+    Press ⌘/Ctrl+K to find markets quickly
+  </Card>
+</Columns>
+
+## Order type quick guide
+
+<AccordionGroup>
+  <Accordion title="Market order">
+    Fills now at the best available prices in the book. Simple and fast, but price can move while filling.
+  </Accordion>
+  <Accordion title="Limit order">
+    Posts at your chosen price and only fills at that price or better. Unfilled size stays open until matched or canceled.
+  </Accordion>
+  <Accordion title="Stop‑loss">
+    A protective order that triggers a market sell if price reaches your stop. Helps cap downside on open positions.
+  </Accordion>
+</AccordionGroup>
+
+## Fees and balances
+
+- Polymarket: USDC on Polygon, small MATIC gas; lower fees
+- Kalshi: USD account, KYC required; venue trading fees
+- Balances show Available, In Orders (for open limits), and In Positions
+
+<Note>
+  See venue details in <a href="/venues/overview">Venues</a> and wallet setup in <a href="/connecting-wallet">Connecting your wallet</a>.
+</Note>
+
+

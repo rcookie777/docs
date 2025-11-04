@@ -32,6 +32,13 @@
             ]
           },
           {
+            "group": "Rewards & Referrals",
+            "pages": [
+              "rewards",
+              "referrals"
+            ]
+          },
+          {
             "group": "Advanced Features",
             "pages": [
               "advanced/copytrading",

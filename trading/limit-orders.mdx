@@ -1,0 +1,40 @@
+---
+title: "Limit Orders"
+description: "Control your entry and exit price"
+---
+
+## Why use a limit order
+
+- **Price control**: only fills at your price or better
+- **Queue for fills**: join the book and wait to be matched
+- **Reduce slippage**: ideal in thin or volatile markets
+
+## Placing a limit order
+
+<Steps>
+  <Step title="Pick outcome & price">
+    Select Yes/No, choose Limit, and enter your limit price in cents (e.g., 62.5).
+  </Step>
+  <Step title="Enter size">
+    Enter shares or USD amount. Minimum order is $1.00. Unfilled size is locked as In Orders.
+  </Step>
+  <Step title="Place & manage">
+    Submit the order. You can cancel or edit by replacing it until it fills.
+  </Step>
+</Steps>
+
+## Partial fills
+
+Your order can fill in parts as opposing orders arrive. Filled shares reduce your open size; remaining stays working in the book.
+
+## Example
+
+- You place a Buy Yes Limit at 60¢ for 200 shares
+- If sellers hit 60¢, you’ll get filled up to your size
+- If the market trades higher, your order remains open until matched or canceled
+
+<Warning>
+  Large orders on illiquid markets may take time to fill. Consider splitting across prices.
+</Warning>
+
+
