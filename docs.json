@@ -12,11 +12,6 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Platform",
-          "href": "https://yourdomain.com",
-          "icon": "chart-line"
-        },
-        {
           "anchor": "Community",
           "href": "https://discord.gg/yourserver",
           "icon": "discord"
@@ -28,8 +23,7 @@
         "group": "Getting Started",
         "pages": [
           "introduction",
-          "quickstart",
-          "connecting-wallet"
+          "quickstart"
         ]
       },
       {
@@ -47,34 +41,6 @@
         "pages": [
           "rewards",
           "referrals"
-        ]
-      },
-      {
-        "group": "Advanced Features",
-        "pages": [
-          "advanced/copytrading",
-          "advanced/minting-shares",
-          "advanced/merging-shares",
-          "advanced/portfolio-management"
-        ]
-      },
-      {
-        "group": "Platform Features",
-        "pages": [
-          "features/orderbook",
-          "features/charts",
-          "features/chat",
-          "features/leaderboard",
-          "features/market-search"
-        ]
-      },
-      {
-        "group": "Venues",
-        "pages": [
-          "venues/overview",
-          "venues/polymarket",
-          "venues/kalshi",
-          "venues/comparison"
         ]
       },
       {
@@ -101,7 +67,7 @@
     "primary": {
       "type": "button",
       "label": "Launch App",
-      "href": "https://yourdomain.com/trade"
+      "href": "https://dev.synthesis.trade"
     }
   },
   "contextual": {
