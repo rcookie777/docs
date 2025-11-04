@@ -1,13 +1,13 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Trading Platform Documentation",
+  "name": "Synthesis Documentation",
   "colors": {
     "primary": "#4DA4FF",
-    "light": "#40FFAF",
-    "dark": "#1B2538"
+    "light": "#7BB9FF",
+    "dark": "#0A1321"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/logo/synthesis-blue.svg",
   "navigation": {
     "tabs": [
       {
@@ -104,8 +104,8 @@
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/synthesis.png",
+    "dark": "/logo/synthesis.png"
   },
   "navbar": {
     "links": [
