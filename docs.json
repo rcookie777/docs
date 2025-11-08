@@ -13,42 +13,23 @@
       "anchors": [
         {
           "anchor": "Community",
-          "href": "https://discord.gg/yourserver",
+          "href": "https://discord.gg/synthesistrade",
           "icon": "discord"
         }
       ]
     },
     "groups": [
       {
-        "group": "Getting Started",
+        "group": "Overview",
         "pages": [
-          "introduction",
-          "quickstart"
+          "introduction"
         ]
-      },
-      {
-        "group": "Trading Basics",
-        "pages": [
-          "trading/overview",
-          "trading/market-orders",
-          "trading/limit-orders",
-          "trading/stop-loss",
-          "trading/understanding-prices"
-        ]
-      },
+      },  
       {
         "group": "Rewards & Referrals",
         "pages": [
           "rewards",
           "referrals"
-        ]
-      },
-      {
-        "group": "Resources",
-        "pages": [
-          "resources/glossary",
-          "resources/faq",
-          "resources/tips-strategies"
         ]
       }
     ]
@@ -61,7 +42,7 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:support@yourdomain.com"
+        "href": "mailto:support@synthesis.trade"
       }
     ],
     "primary": {
@@ -82,8 +63,8 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/yourhandle",
-      "discord": "https://discord.gg/yourserver"
+      "x": "https://x.com/synthesistrade",
+      "discord": "https://discord.gg/synthesistrade"
     }
   }
 }
