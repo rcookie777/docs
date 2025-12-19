@@ -24,6 +24,16 @@
         "pages": [
           "introduction"
         ]
+      },
+      {
+        "group": "Guides",
+        "pages": [
+          "sign-up",
+          "deposit",
+          "withdrawal",
+          "export-wallet",
+          "rewards"
+        ]
       }
     ]
   },
@@ -41,7 +51,7 @@
     "primary": {
       "type": "button",
       "label": "Launch App",
-      "href": "https://dev.synthesis.trade"
+      "href": "https://synthesis.trade"
     }
   },
   "contextual": {
