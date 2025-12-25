@@ -31,7 +31,8 @@
           "deposit",
           "withdrawal",
           "export-wallet",
-          "rewards"
+          "rewards",
+          "support"
         ]
       }
     ]
